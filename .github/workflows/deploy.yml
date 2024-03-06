@@ -46,5 +46,5 @@ jobs:
         uses: dokku/github-action@master
         with:
           git_remote_url: 'ssh://dokku@192.168.50.103/bakkacino-api'
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh_private_key: ${{ secrets.DOKKU_SSH_PRIVATE_KEY }}
           deploy_docker_image: registry.herjus.tech/${{ github.repository }}:${{ github.sha }}
