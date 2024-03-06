@@ -1,0 +1,5 @@
+/env/
+**/__pycache__/
+/External Libraries/
+.env
+/.idea/
