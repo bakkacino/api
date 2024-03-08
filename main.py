@@ -42,6 +42,7 @@ manager = ConnectionManager()
 
 @app.websocket("/chat")
 async def chat_socket(websocket: WebSocket):
+
     await websocket.accept()
     await manager.connect(websocket)
     try:
